@@ -1,6 +1,6 @@
 from hello_world import hello_func
 
-def test_hello():
+def test_hello() -> None:
     out = hello_func("jorge")
 
-    assert out == "ola rui"
+    assert out == "hello jorge"
