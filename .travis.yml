@@ -2,8 +2,11 @@ dist: xenial
 
 language: python
 
+before_install:
+    - pip install -r requirements.txt
+
 python:
     - "3.7"
 
 script:
-    - echo "hello world :)"
+    - pytest
